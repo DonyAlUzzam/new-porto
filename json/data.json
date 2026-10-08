@@ -1,0 +1,291 @@
+{
+  "Projects": [
+    {
+      "title": "SPEKTRO — DPR RI",
+      "desc": [
+        "Integrated organizational performance assessment platform for DPR RI.",
+        "I contributed to system architecture, implementation, coordination, stability, and regulatory alignment, while leading a team of 3 developers."
+      ],
+      "year": "2024–2026",
+      "preview": "",
+      "code": "",
+      "images": [],
+      "tech": [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "REST API"
+      ],
+      "slug": "spektro-dpr-ri",
+      "category": "Government / Performance Management",
+      "featured": true,
+      "role": "Software Engineer / Technical Lead",
+      "impact": "Led 3 developers and contributed from architecture through production implementation."
+    },
+    {
+      "title": "Reporthink.ai",
+      "desc": [
+        "AI-powered sustainability and annual report platform that transforms uploaded raw business data into structured reporting workflows.",
+        "I worked across full-stack development, process refinement, database integration, and API integration."
+      ],
+      "year": "2026",
+      "preview": "https://reporthink.ai/",
+      "code": "",
+      "images": [],
+      "tech": [
+        "Laravel",
+        "PHP",
+        "PostgreSQL",
+        "Blade",
+        "jQuery",
+        "AI",
+        "REST API"
+      ],
+      "slug": "reporthink-ai",
+      "category": "AI / Sustainability",
+      "featured": true,
+      "role": "Full Stack Developer",
+      "impact": "Built and integrated AI-powered reporting capabilities into a production platform."
+    },
+    {
+      "title": "Carbonthink.ai",
+      "desc": [
+        "AI-powered carbon management platform focused on carbon accounting across Scope 1, 2, and 3.",
+        "I contributed to application development and integration of AI-related capabilities."
+      ],
+      "year": "2026",
+      "preview": "https://carbonthink.ai/",
+      "code": "",
+      "images": [],
+      "tech": [
+        "Laravel",
+        "PHP",
+        "PostgreSQL",
+        "AI",
+        "REST API"
+      ],
+      "slug": "carbonthink-ai",
+      "category": "AI / Carbon Management",
+      "featured": true,
+      "role": "Full Stack Developer",
+      "impact": "Implemented production features for AI-assisted carbon accounting workflows."
+    },
+    {
+      "title": "Digitalisasi SPBU Pertamina",
+      "desc": [
+        "Real-time dashboard used by Pertamina internal staff to monitor SPBU data across Indonesia.",
+        "I developed the dashboard together with my team, working on application features, data presentation, and performance."
+      ],
+      "year": "2021",
+      "preview": "https://dashboard.spbu.id/",
+      "code": "",
+      "images": [
+        "/projects/digitalisasi/digital1.png",
+        "/projects/digitalisasi/digital2.png",
+        "/projects/digitalisasi/digital3.png"
+      ],
+      "tech": [
+        "JavaScript",
+        "Laravel",
+        "Leaflet JS",
+        "MySQL",
+        "jQuery"
+      ],
+      "slug": "digitalisasi-spbu",
+      "category": "Dashboard / Data Visualization",
+      "featured": true,
+      "role": "Full Stack Developer",
+      "impact": "Built a national-scale operational dashboard for real-time SPBU monitoring."
+    },
+    {
+      "title": "BigQuery Apps",
+      "desc": [
+        "Data analytics and visualization platform inspired by Metabase.",
+        "The project was built using PHP Zend Framework, Apache Solr, and Metronic."
+      ],
+      "year": "2020",
+      "preview": "",
+      "code": "",
+      "images": [
+        "/projects/bigquery/bigquery2.png"
+      ],
+      "tech": [
+        "PHP",
+        "Zend Framework",
+        "Apache Solr",
+        "Metronic"
+      ],
+      "slug": "bigquery",
+      "category": "Data Analytics",
+      "featured": false,
+      "role": "Software Engineer",
+      "impact": "Built an internal data analytics and visualization platform."
+    },
+    {
+      "title": "Kemenhub Digital Permitting",
+      "desc": [
+        "Digital permitting ecosystem consisting of nationwide permit applications and internal management portals.",
+        "I worked on application development and integration for a large-scale government workflow."
+      ],
+      "year": "—",
+      "preview": "",
+      "code": "",
+      "images": [],
+      "tech": [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "REST API"
+      ],
+      "slug": "kemenhub-digital-permitting",
+      "category": "Government / Digital Services",
+      "featured": true,
+      "role": "Full Stack Developer",
+      "impact": "Contributed to digital workflows supporting nationwide permit services."
+    },
+    {
+      "title": "School CMS",
+      "desc": [
+        "Content management platform that allows schools to manage website content without requiring deep technical knowledge.",
+        "The project was built based on client requirements."
+      ],
+      "year": "2023",
+      "preview": "https://sdn4laki.sch.id/",
+      "code": "",
+      "images": [
+        "/projects/sd/sdn4.png",
+        "/projects/sd/sd.png",
+        "/projects/sd/sd2.png"
+      ],
+      "tech": [
+        "PHP",
+        "Laravel",
+        "React",
+        "Next.js",
+        "MySQL"
+      ],
+      "slug": "sdn4-laki",
+      "category": "CMS / Web Development",
+      "featured": false,
+      "role": "Full Stack Developer",
+      "impact": "Delivered a client-focused CMS with a modern web interface."
+    },
+    {
+      "title": "Company Profile CMS",
+      "desc": [
+        "Fully managed company profile platform that allows non-technical users to manage website content.",
+        "The project was created based on client needs."
+      ],
+      "year": "2024",
+      "preview": "https://jettplasmaeye.com/",
+      "code": "",
+      "images": [
+        "/projects/jet/jet.png",
+        "/projects/jet/jet2.png",
+        "/projects/jet/jet3.png",
+        "/projects/jet/jet4.png"
+      ],
+      "tech": [
+        "Next.js",
+        "Framer Motion"
+      ],
+      "slug": "jetplasma-website",
+      "category": "CMS / Web Development",
+      "featured": false,
+      "role": "Frontend / Full Stack Developer",
+      "impact": "Built a responsive company profile experience with editable content."
+    },
+    {
+      "title": "Academy Profile",
+      "desc": [
+        "Academy profile website with scheduling and content features.",
+        "The project was created based on client requirements."
+      ],
+      "year": "2023",
+      "preview": "https://pilatesmindacademy.com/",
+      "code": "",
+      "images": [
+        "/projects/pilates/pilates1.png",
+        "/projects/pilates/pilates2.png"
+      ],
+      "tech": [
+        "PHP",
+        "Laravel",
+        "React"
+      ],
+      "slug": "pilates-mind-academy",
+      "category": "Web Development",
+      "featured": false,
+      "role": "Full Stack Developer",
+      "impact": "Delivered a client-ready profile and scheduling experience."
+    },
+    {
+      "title": "PokeDumb",
+      "desc": [
+        "A learning project built during the Arkademy bootcamp using React Native, AdonisJS, OneSignal, and MySQL."
+      ],
+      "year": "2019",
+      "preview": "",
+      "code": "https://github.com/DonyAlUzzam/Pokemon/",
+      "images": [
+        "/projects/poke/PokeDumb.png"
+      ],
+      "tech": [
+        "Adonis.js",
+        "React Native",
+        "OneSignal",
+        "MySQL"
+      ],
+      "slug": "pokedump",
+      "category": "Mobile / Learning",
+      "featured": false,
+      "role": "Developer",
+      "impact": "Built and deployed a mobile application as a bootcamp graduation project."
+    },
+    {
+      "title": "PariwisataEnim",
+      "desc": [
+        "Android learning project for exploring tourist destinations in Muara Enim using Java."
+      ],
+      "year": "2019",
+      "preview": "",
+      "code": "https://github.com/DonyAlUzzam/pariwisata-enim",
+      "images": [
+        "/projects/pariwisata/enim.png"
+      ],
+      "tech": [
+        "Java",
+        "RecyclerView"
+      ],
+      "slug": "pariwisata-enim",
+      "category": "Mobile / Learning",
+      "featured": false,
+      "role": "Developer",
+      "impact": "Used the project to expand experience beyond web development."
+    },
+    {
+      "title": "My First Portfolio Website",
+      "desc": [
+        "My first portfolio website, built while learning React.js."
+      ],
+      "year": "2019",
+      "preview": "https://donyaluzzam.github.io/",
+      "code": "",
+      "images": [
+        "/projects/porto/porto1.png",
+        "/projects/porto/porto2.png",
+        "/projects/porto/porto3.png"
+      ],
+      "tech": [
+        "React.js",
+        "React Lazy"
+      ],
+      "slug": "my-first-portofolio-website",
+      "category": "Web / Personal",
+      "featured": false,
+      "role": "Developer",
+      "impact": "Early React project that started my portfolio journey."
+    }
+  ]
+}
