@@ -124,18 +124,26 @@ export default function ProjectDetail({ project }) {
 						{hasImages ? (
 							<div className="mt-6 space-y-6">
 								{project.images.map((image, index) => (
-									<div
+									<figure
 										key={image}
-										className="relative overflow-hidden rounded-3xl border border-neutral-200 bg-white">
-										<Image
-											src={image}
-											alt={`${project.title} screenshot ${index + 1}`}
-											width={1920}
-											height={1080}
-											sizes="(max-width: 1024px) 100vw, 720px"
-											className="h-auto w-full"
-										/>
-									</div>
+										className="overflow-hidden rounded-3xl border border-neutral-200 bg-neutral-100 p-3 sm:p-5">
+										<div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-neutral-950/5">
+											<Image
+												src={image}
+												alt={`${project.title} screenshot ${index + 1}`}
+												width={1920}
+												height={1080}
+												sizes="(max-width: 1024px) 100vw, 720px"
+												className="h-auto w-full"
+											/>
+										</div>
+										{project.images.length > 1 && (
+											<figcaption className="mt-3 px-1 text-xs text-neutral-500">
+												Screenshot {index + 1} of{" "}
+												{project.images.length}
+											</figcaption>
+										)}
+									</figure>
 								))}
 							</div>
 						) : (

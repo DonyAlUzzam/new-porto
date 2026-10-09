@@ -25,14 +25,18 @@ function ProjectCard({ project, index }) {
       className="group overflow-hidden rounded-3xl border border-neutral-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl"
     >
       <Link href={`/projects/${project.slug}`}>
-        <div className="relative aspect-[16/10] overflow-hidden bg-neutral-900">
+        <div
+          className={`relative aspect-[16/9] overflow-hidden ${
+            hasImage ? "bg-neutral-100" : "bg-neutral-900"
+          }`}
+        >
           {hasImage ? (
             <Image
               src={project.images[0]}
               alt={project.title}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0"
+              className="object-contain p-4 grayscale transition duration-500 group-hover:scale-[1.03] group-hover:grayscale-0 sm:p-6"
             />
           ) : (
             <>

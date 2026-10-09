@@ -58,7 +58,7 @@ export default function AboutPage() {
                 fill
                 priority
                 sizes="(max-width: 1024px) 80vw, 400px"
-                className="object-cover grayscale"
+                className="object-cover object-top grayscale"
               />
             </div>
             <div className="absolute -bottom-8 -right-8 hidden w-44 overflow-hidden rounded-2xl border-8 border-[#f5f5f3] bg-white sm:block">
@@ -152,14 +152,14 @@ export default function AboutPage() {
           {[Me1, Me2, Me3].map((image, index) => (
             <div
               key={index}
-              className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-neutral-200"
+              className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-neutral-200"
             >
               <Image
                 src={image}
-                alt={`Dony Al-Uzzam ${index + 1}`}
+                alt={`Potret Dony Al-Uzzam ${index + 1}`}
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-cover grayscale transition duration-500 hover:grayscale-0"
+                className="object-cover object-top grayscale transition duration-500 hover:grayscale-0"
               />
             </div>
           ))}

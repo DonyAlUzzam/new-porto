@@ -23,33 +23,45 @@ const techStack = [
   "Laravel",
   "PHP",
   "Node.js",
+  "Express.js",
+  "NestJs",
   "React",
   "Next.js",
+  "Vue.js",
   "PostgreSQL",
+  "Tailwind CSS",
   "MySQL",
   "REST API",
 ];
 
-const featuredProjects = data.Projects.filter(
-  (project) => project.featured
-).slice(0, 4).map((project) => ({
-  title: project.title,
-  category: project.category,
-  description: project.desc[0],
-  tech: project.tech,
-  href: `/projects/${project.slug}`,
-  preview: project.preview || "",
-  image: project.images?.[0] || "",
-}));
+const featuredProjects = data.Projects.filter((project) => project.featured)
+  .slice(0, 4)
+  .map((project) => ({
+    title: project.title,
+    category: project.category,
+    description: project.desc[0],
+    tech: project.tech,
+    href: `/projects/${project.slug}`,
+    preview: project.preview || "",
+    image: project.images?.[0] || "",
+  }));
 
 const skills = [
   {
     title: "Backend",
-    items: ["PHP", "Laravel", "Node.js", "Express.js", "REST API"],
+    items: ["PHP", "Laravel", "Node.js", "Express.js", "NestJs", "REST API"],
   },
   {
     title: "Frontend",
-    items: ["React", "Next.js", "JavaScript", "jQuery", "Blade", "Tailwind CSS"],
+    items: [
+      "React",
+      "Next.js",
+      "Vue.js",
+      "JavaScript",
+      "jQuery",
+      "Blade",
+      "Tailwind CSS",
+    ],
   },
   {
     title: "Database",
@@ -69,6 +81,10 @@ const skills = [
     title: "AI",
     items: ["AI Integration", "LLM APIs", "AI-powered Applications"],
   },
+  {
+    title: "DevOps & Tools",
+    items: ["Git", "Linux", "Nginx", "Docker", "CI/CD", "Vercel"],
+  },
 ];
 
 const experiences = [
@@ -80,11 +96,18 @@ const experiences = [
       "Built and maintained production systems, including government performance management, AI-powered platforms, dashboards, and data-intensive applications.",
   },
   {
-    period: "Leadership",
+    period: "Leadership · 2025–2026",
     title: "Technical Lead / Developer",
     company: "SPEKTRO — DPR RI",
     description:
-      "Led 3 developers, contributed to architecture and implementation, coordinated delivery, and presented system architecture and business flow in an internal official forum.",
+      "Led a team of 3 developers, contributed to architecture and implementation, coordinated delivery, and presented the system architecture and business flow in an internal official forum.",
+  },
+  {
+    period: "Leadership · 2021–2023",
+    title: "Team Lead / Developer",
+    company: "Bigbox — Pertamina SPBU Dashboard",
+    description:
+      "Led the development team behind a national real-time dashboard that monitors SPBU data across Indonesia — coordinating feature delivery, data presentation, and performance with the team.",
   },
   {
     period: "Background",
@@ -92,6 +115,24 @@ const experiences = [
     company: "10+ years in software development",
     description:
       "End-to-end experience across backend, frontend, databases, APIs, dashboards, CMS platforms, and application integrations.",
+  },
+];
+
+const stats = [
+  {
+    value: "10+",
+    label: "Years experience",
+    note: "Building and shipping production web applications — backend, frontend, databases, and APIs.",
+  },
+  {
+    value: "5",
+    label: "Developers led",
+    note: "Technical lead on SPEKTRO — DPR RI, from architecture through delivery.",
+  },
+  {
+    value: "2",
+    label: "AI platforms built",
+    note: "Reporthink.ai and Carbonthink.ai, both running in production.",
   },
 ];
 
@@ -144,7 +185,9 @@ export default function HomePage() {
                 </p>
                 <h1 className="max-w-5xl text-5xl font-bold leading-[0.95] tracking-[-0.04em] sm:text-6xl md:text-7xl lg:text-[5.8rem]">
                   I build production-ready systems,{" "}
-                  <span className="text-neutral-500">from architecture to UI.</span>
+                  <span className="text-neutral-500">
+                    from architecture to UI.
+                  </span>
                 </h1>
                 <p className="mt-7 max-w-2xl text-base leading-7 text-neutral-600 md:text-lg">
                   I&apos;m Dony Al-Uzzam, a Full Stack Developer focused on
@@ -217,7 +260,10 @@ export default function HomePage() {
         </section>
 
         {/* ABOUT / VALUE */}
-        <section id="about" className="border-t border-neutral-200 bg-white px-6 py-24 md:px-12 lg:px-20">
+        <section
+          id="about"
+          className="border-t border-neutral-200 bg-white px-6 py-24 md:px-12 lg:px-20"
+        >
           <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[.8fr_1.2fr]">
             <Reveal>
               <SectionTitle
@@ -235,15 +281,22 @@ export default function HomePage() {
             </Reveal>
 
             <div className="grid gap-4 sm:grid-cols-3">
-              {[
-                ["10+", "Years experience"],
-                ["3", "Developers led"],
-                ["2", "AI platforms built"],
-              ].map(([number, label], index) => (
-                <Reveal key={label} delay={index * 0.08}>
-                  <div className="h-full rounded-2xl border border-neutral-200 bg-[#f5f5f3] p-6">
-                    <p className="text-4xl font-bold">{number}</p>
-                    <p className="mt-2 text-sm leading-6 text-neutral-600">{label}</p>
+              {stats.map((stat, index) => (
+                <Reveal
+                  key={stat.label}
+                  delay={index * 0.08}
+                  className="h-full"
+                >
+                  <div className="flex h-full flex-col justify-between rounded-2xl border border-neutral-200 bg-[#f5f5f3] p-6">
+                    <div>
+                      <p className="text-4xl font-bold">{stat.value}</p>
+                      <p className="mt-2 text-sm leading-6 text-neutral-600">
+                        {stat.label}
+                      </p>
+                    </div>
+                    <p className="mt-8 border-t border-neutral-200 pt-4 text-sm leading-6 text-neutral-500">
+                      {stat.note}
+                    </p>
                   </div>
                 </Reveal>
               ))}
@@ -267,17 +320,17 @@ export default function HomePage() {
                 <Reveal key={project.title} delay={index * 0.08}>
                   <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-neutral-200 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl">
                     {project.image ? (
-                      <div className="relative aspect-[4/3] overflow-hidden bg-neutral-200">
+                      <div className="relative aspect-[16/9] overflow-hidden bg-neutral-100">
                         <Image
                           src={project.image}
                           alt={project.title}
                           fill
-                          sizes="(max-width: 1024px) 100vw, 33vw"
-                          className="object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0"
+                          sizes="(max-width: 768px) 100vw, 50vw"
+                          className="object-contain p-5 grayscale transition duration-500 group-hover:scale-[1.03] group-hover:grayscale-0 sm:p-7"
                         />
                       </div>
                     ) : (
-                      <div className="relative flex aspect-[4/3] items-end overflow-hidden bg-neutral-900 p-6 text-white">
+                      <div className="relative flex aspect-[16/9] items-end overflow-hidden bg-neutral-900 p-6 text-white">
                         <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full border border-white/10" />
                         <div className="absolute bottom-6 right-6 text-6xl font-black text-white/10">
                           0{index + 1}
@@ -292,7 +345,9 @@ export default function HomePage() {
                       <p className="text-xs font-semibold uppercase tracking-[0.2em] text-neutral-400">
                         {project.category}
                       </p>
-                      <h3 className="mt-3 text-2xl font-bold">{project.title}</h3>
+                      <h3 className="mt-3 text-2xl font-bold">
+                        {project.title}
+                      </h3>
                       <p className="mt-4 flex-1 text-sm leading-6 text-neutral-600">
                         {project.description}
                       </p>
@@ -344,7 +399,10 @@ export default function HomePage() {
         </section>
 
         {/* SKILLS */}
-        <section id="skills" className="border-y border-neutral-200 bg-white px-6 py-24 md:px-12 lg:px-20">
+        <section
+          id="skills"
+          className="border-y border-neutral-200 bg-white px-6 py-24 md:px-12 lg:px-20"
+        >
           <div className="mx-auto max-w-7xl">
             <Reveal>
               <SectionTitle
@@ -382,7 +440,7 @@ export default function HomePage() {
               <SectionTitle
                 eyebrow="Experience"
                 title="From implementation to technical ownership."
-                description="My experience covers hands-on development as well as architecture, coordination, and team leadership."
+                description="Hands-on development, architecture, and coordination — including leading teams at SPEKTRO (DPR RI) and BigBox on the Pertamina SPBU dashboard."
               />
             </Reveal>
 

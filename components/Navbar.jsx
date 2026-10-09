@@ -26,7 +26,11 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
   const navVariant = {
     open: {
       clipPath: `circle(1920px at calc(100% - 40px) 40px)`,
-      transition: { type: isMobile ? "tween" : "spring", stiffness: 400, damping: 40 },
+      transition: {
+        type: isMobile ? "tween" : "spring",
+        stiffness: 400,
+        damping: 40,
+      },
     },
     closed: {
       clipPath: "circle(0px at calc(100% - 40px) 40px)",
@@ -38,7 +42,12 @@ const NavItems = ({ isNavOpen, setIsNavOpen }) => {
     open: (custom) => ({
       opacity: 1,
       x: 0,
-      transition: { delay: custom, type: "spring", stiffness: 400, damping: 40 },
+      transition: {
+        delay: custom,
+        type: "spring",
+        stiffness: 400,
+        damping: 40,
+      },
     }),
     closed: { opacity: 0, x: -40 },
   };
@@ -90,7 +99,7 @@ const Navbar = () => {
         }`}
       >
         <Link href="/#home" onClick={() => setIsNavOpen(false)}>
-          <span className="text-xl font-bold tracking-tight">Al-Uzzam.</span>
+          <span className="text-xl font-bold tracking-tight">Al-Uzzam</span>
         </Link>
 
         <button
@@ -105,7 +114,9 @@ const Navbar = () => {
           />
           <span
             className={`h-0.5 w-8 rounded-full transition ${
-              isNavOpen ? "-translate-y-1 -rotate-45 bg-white" : "bg-neutral-950"
+              isNavOpen
+                ? "-translate-y-1 -rotate-45 bg-white"
+                : "bg-neutral-950"
             }`}
           />
         </button>
