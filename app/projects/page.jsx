@@ -127,8 +127,8 @@ export default function ProjectsPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-7 text-neutral-600 md:text-lg">
             A collection of production systems, dashboards, CMS platforms,
-            government applications, AI products, and learning projects I
-            have built or contributed to.
+            government applications, AI products, and learning projects I have
+            built or contributed to.
           </p>
         </motion.div>
 
